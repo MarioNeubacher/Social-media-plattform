@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0px;
+    --grey: #DBDBDB;
+    --lightgrey: #FAFAFA;
+    font-family: 'segoe UI';
+}
+
+::-webkit-scrollbar {
+    height: 10px;                      
+  }
+
+::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 10px;
+    height: 100px;
+}
+
+.div-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 17.5%;
+}
+
+.header {
+    border-bottom: 1.5px solid var(--grey);
+}
+
+.d-none {
+    display: none;
+}
+
+.text-instagram {
+    font-family: 'Lobster';
+    margin: 10px;
+    font-size: 25px;
+}
+
+.input-search {
+    text-align: center;
+    height: 20px;
+    border: solid 1px var(--grey);
+    border-radius: 5px;
+    padding: 2.5px 25px;
+    background-color: var(--lightgrey);
+    color: #9C98B8;
+    outline: none;
+}
+
+.img-search {
+    height: 10px;
+    width: 10px;
+}
+
+.img-icons {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.div-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.div-background {
+    background-color: var(--lightgrey);
+    padding: 20px 17.5%;
+}
+
+.div-stories {
+    border: solid 1px var(--grey);
+    background-color: white;
+    display: flex;
+    position: relative;
+    overflow-x: scroll;
+    padding: 10px 20px 0px 20px;
+}
+
+.img-story {
+    border-width: 10px;
+    border-color: orange;
+}
+
+.img-arrow {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+}
+
+.img-profile {
+    border-radius: 100%;
+}
+
+.img-user {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    padding: 0px 16px;
+}
+
+.img-userpost {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    padding: 5px 10px 2.5px 10px;
+}
+
+.div-posts {
+    border: solid 1px var(--grey);
+    background-color: white;
+    margin-top: 25px;
+}
+
+.div-postspacebetween {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.img-ellipsis {
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+}
+
+.div-postheaderleft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.img-post {
+   height: 500px;
+   object-fit: cover;
+   width: 100%;
+}
+
+.div-postbottom {
+    padding: 10px 20px;
+}
+
+.text-hoursago {
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 5px;
+    color: #8E8E8E;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.text-viewcomments {
+    color: #989898;
+    font-size: 12.5px;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+.input-addcomment {
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.text-blue {
+    color: #1DA1F6;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.div-pagedivider {
+    width: calc(100% - 350px);
+}
+
+.div-pageright {
+    position: fixed;
+    right: 275px;
+    top: 85px;
+    width: 300px;
+    height: 500px;
+}
+
+.div-alignitems {
+    display: flex;
+    align-items: center;
+}
+
+.div-righttext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.text-alleansehen {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.text-vorschlägefürdich {
+    font-size: 15px;
+    color: grey;
+}
+
+.div-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-imprint {
+    font-size: 10px;
+    color: grey;
+    cursor: pointer;
+}
+
+.text-bilderherkunft {
+    text-decoration: none;
+    color: grey;
+}
+
+.div-storyJSON {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 1300px) {
+    .div-pageright {
+        display: none;
+    }
+
+    .div-pagedivider {
+        width: 100%;
+    }
+
+    .div-header {
+        padding: 0px 10px 0px 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .div-background {
+        background-color: var(--lightgrey);
+        padding: 0px;
+    }
+
+    .div-posts {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .input-search {
+        display: none;
+    }
+}
